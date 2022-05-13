@@ -3,10 +3,17 @@
 import pytest
 from selenium import webdriver
 
-
-browser = webdriver.Chrome()
+options = webdriver.ChromeOptions()
+options.add_argument("--headless")
+options.add_argument("--ignore-certificate-errors")
+#options.add_argument("--incognito")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-gpu")
+#options.add_argument("--disable-dev-shm-usage")
+#options.add_argument("--enable-file-cookies")
+#options.add_argument("--enable-experimental-cookie-features")
 browser.maximize_window()
-
+browser = webdriver.Chrome(options=options)
 
 # This test will run when 'login_test' is called when invoking -m,
 # e.g. 'pytest test_custom_markers.py -m "login_test"'.
