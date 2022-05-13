@@ -9,7 +9,7 @@ options.add_argument("--ignore-certificate-errors")
 #options.add_argument("--incognito")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-gpu")
-#options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-dev-shm-usage")
 #options.add_argument("--enable-file-cookies")
 #options.add_argument("--enable-experimental-cookie-features")
 
