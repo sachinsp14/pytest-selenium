@@ -14,5 +14,5 @@ browser.maximize_window()
 # e.g. 'pytest test_custom_markers.py -m "empty_form_test"'.
 @pytest.mark.broswer_test
 def test_assert_empty_login_form():
-    browser.get(https://myevesachinsp1651776534764.dashboard.psonar.us/login)
+    browser.get('https://myevesachinsp1651776534764.dashboard.psonar.us/login')
     assert "Welcome to Prosimo" in broswer.page_source
