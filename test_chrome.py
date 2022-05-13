@@ -12,8 +12,9 @@ options.add_argument("--disable-gpu")
 #options.add_argument("--disable-dev-shm-usage")
 #options.add_argument("--enable-file-cookies")
 #options.add_argument("--enable-experimental-cookie-features")
-browser.maximize_window()
+
 browser = webdriver.Chrome(options=options)
+browser.maximize_window()
 
 # This test will run when 'login_test' is called when invoking -m,
 # e.g. 'pytest test_custom_markers.py -m "login_test"'.
