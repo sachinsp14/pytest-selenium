@@ -4,7 +4,7 @@ import pytest
 from selenium import webdriver
 
 
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
 browser.maximize_window()
 
 
